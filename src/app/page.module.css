@@ -1,0 +1,164 @@
+/* Hero Mobile */
+.containerHm {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  height: 100vh;
+  position: relative;
+}
+
+.imgHm {
+  position: relative;
+  z-index: 0;
+}
+
+.logoHm {
+  font-family: var(--font-pirata), system-ui;
+  font-size: 40vw;
+  color: white;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  transform: translateY(-10%);
+}
+
+/* Section base */
+.section {
+  height: 100vh;
+  background: #0F0F0F;
+  width: 100vw;
+}
+
+/* About */
+.about {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  max-width: 320px;
+  font-size: 20px;
+  text-align: justify;
+  padding: 1em;
+  margin: 0 auto;
+  background: #0F0F0F;
+  width: 100vw;
+}
+
+@media (min-width: 1024px) {
+  .about {
+    font-size: 38px;
+    max-width: 1200px;
+    padding: 3em;
+  }
+}
+
+/* Footer */
+.footer {
+  overflow: hidden;
+  background: #0F0F0F;
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+  width: 100vw;
+}
+
+.header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 100%;
+}
+
+.headerTitle {
+  text-align: center;
+  color: #fff;
+  font-weight: lighter;
+  font-size: 6vw;
+  margin-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mutti {
+  font-family: var(--font-pirata), system-ui;
+  font-size: 9vw;
+}
+
+.exposant {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+}
+
+.goButton {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 30px;
+  padding: 15px 30px;
+  outline: none;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+/* Gallery */
+.gallery {
+  height: 100%;
+  width: 100%;
+}
+
+.item {
+  position: absolute;
+  width: 200px;
+  height: 275px;
+}
+
+.itemImg {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+}
+
+@media (max-width: 1200px) {
+  .item {
+    width: 150px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 992px) {
+  .item {
+    width: 145px;
+    height: 195px;
+  }
+}
+
+@media (max-width: 768px) {
+  .item {
+    width: 115px;
+    height: 140px;
+  }
+}
+
+@media (max-width: 576px) {
+  .item {
+    width: 105px;
+    height: 130px;
+  }
+}
+
+@media (max-width: 400px) {
+  .item {
+    width: 105px;
+    height: 130px;
+    padding-top: 1em;
+  }
+}

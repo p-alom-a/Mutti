@@ -14,16 +14,7 @@ const items = [
       parllaxSpeed: 0.05
 
     },
-  
-    // {
-    //   img: "https://media.vanityfair.fr/photos/6151dc113657cac85cbb2c43/16:9/w_2560%2Cc_limit/ABACA_781479_001.jpg",
-    //   alt: "Angela Merkel feeding birds",
-    //   legende: "Angela Merkel en 2018",
-    //   id: 3,
-    //   parllaxSpeed: 0.08
 
-    // },
-  
     {
       img: "https://i.guim.co.uk/img/media/d465c37b95a9d60b9502ebb4874fc1f3fa775be6/246_24_2033_1219/master/2033.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=1060f80718168f29bccd9f9ca900ee0d",
       alt: "Angela Merkel pointing",
@@ -58,20 +49,20 @@ const items = [
 
     },
 
- 
+
     {
       img: "https://media.nature.com/lw767/magazine-assets/d41586-021-02479-6/d41586-021-02479-6_19659954.jpg",
       alt: "Angela Merkel chemistry",
-    
+
       legende: "Angela Merkel en 2018",
       id: 10,
       parllaxSpeed: 0.065
 
     },
 
-   
 
- 
+
+
 
     //FOOD
 
@@ -97,7 +88,7 @@ const items = [
       category:"food",
       keyWord:["cake"],
       id: 14,
-     
+
     },
 
     {
@@ -108,7 +99,7 @@ const items = [
       keyWord:["kebab"],
 
       id: 11,
-     
+
     },
 
     {
@@ -118,7 +109,7 @@ const items = [
       place:" during the christening ceremony of ROS 777 fishing trawler 'Mark' in Sassnitz, Mecklenburg-Western Pomerania,May 26, 2015.",
       category:"food",
       id: 12,
-     
+
     },
 
 
@@ -131,10 +122,10 @@ const items = [
       category:"food",
       keyWord:["cake"],
       id: 13,
-     
+
     },
 
-  
+
 
     {
       img: "https://www.shutterstock.com/editorial/image-editorial/O8D7I131N5TcA550MjI5OQ==/german-chancellor-angela-merkel-eats-original-thuringia-440nw-8219902a.jpg",
@@ -144,7 +135,7 @@ const items = [
       category:"food",
       keyWord:["sandwich","saussage"],
       id: 14,
-     
+
     },
 
     {
@@ -155,7 +146,7 @@ const items = [
       category:"food",
       keyWord:["beer","beverage"],
       id: 15,
-     
+
     },
 
     {
@@ -166,7 +157,7 @@ const items = [
       category:"food",
       keyWord:["beverage",],
       id: 16,
-     
+
     },
 
     {
@@ -177,10 +168,10 @@ const items = [
       category:"food",
       keyWord:["beer","beverage"],
       id: 17,
-     
+
     },
 
-    
+
 
     //Sport
 
@@ -192,7 +183,7 @@ const items = [
   category:"sport",
   keyWord:["ball",],
   id: 16,
- 
+
 },
 
 {
@@ -203,7 +194,7 @@ const items = [
   category:"sport",
   keyWord:["ping-pong",],
   id: 17,
- 
+
 },
 
     //Technology
@@ -216,12 +207,9 @@ const items = [
       category:"technology",
       keyWord:["",],
       id: 18,
-     
+
     },
 
 ]
-
-
-
 
 export { items };
