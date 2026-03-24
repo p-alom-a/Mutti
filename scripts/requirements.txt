@@ -1,0 +1,11 @@
+requests>=2.31.0
+Pillow>=10.0.0
+imagehash>=4.3.1
+torch>=2.1.0
+torchvision>=0.16.0
+transformers>=4.36.0
+supabase>=2.3.0
+python-dotenv>=1.0.0
+duckduckgo-search>=4.1.0
+tqdm>=4.66.0
+jinja2>=3.1.0

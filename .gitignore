@@ -1,3 +1,7 @@
 node_modules/
 .next/
 out/
+
+# Pipeline data
+scripts/data/
+scripts/.env

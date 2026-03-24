@@ -1,48 +1,9 @@
 "use client";
 
-import { useEffect, useRef } from "react";
 import Link from "next/link";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import styles from "./page.module.css";
 
-if (typeof window !== "undefined") {
-  gsap.registerPlugin(ScrollTrigger);
-}
-
 export default function Categories() {
-  const cardContainerRef = useRef(null);
-
-  useEffect(() => {
-    const container = cardContainerRef.current;
-    if (!container) return;
-
-    gsap.registerPlugin(ScrollTrigger);
-
-    const cards = container.children;
-
-    const ctx = gsap.context(() => {
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: container,
-          start: "top 100%",
-          end: "top 50%",
-          scrub: 1,
-        },
-      });
-
-      tl.from(cards[0], { x: -200, opacity: 0, duration: 5 });
-      tl.from(cards[1], { x: 200, opacity: 0, duration: 5 });
-      tl.from(cards[2], { x: -200, opacity: 0, duration: 5 });
-      tl.from(cards[3], { x: 200, opacity: 0, duration: 5 });
-      tl.from(cards[4], { x: -200, opacity: 0, duration: 5 });
-      tl.from(cards[5], { x: 200, opacity: 0, duration: 5 });
-
-      ScrollTrigger.refresh();
-    });
-
-    return () => ctx.revert();
-  }, []);
 
   return (
     <>
@@ -73,25 +34,25 @@ export default function Categories() {
 
       {/* Categories cards */}
       <section className={styles.categories}>
-        <div className={styles.cardContainer} ref={cardContainerRef}>
-          <div className={`${styles.card} ${styles.one}`}>
+        <div className={styles.cardContainer}>
+          <Link href="/categories/animal" className={`${styles.card} ${styles.one}`}>
             <h3 className={styles.cardTile}>Animal</h3>
-          </div>
-          <div className={`${styles.card} ${styles.two}`}>
+          </Link>
+          <Link href="/categories/food" className={`${styles.card} ${styles.two}`}>
             <h3 className={styles.cardTile}>Food&Beverage</h3>
-          </div>
-          <div className={`${styles.card} ${styles.three}`}>
+          </Link>
+          <Link href="/categories/vintage" className={`${styles.card} ${styles.three}`}>
             <h3 className={styles.cardTile}>Vintage</h3>
-          </div>
-          <div className={`${styles.card} ${styles.four}`}>
+          </Link>
+          <Link href="/categories/technology" className={`${styles.card} ${styles.four}`}>
             <h3 className={styles.cardTile}>Technology</h3>
-          </div>
-          <div className={`${styles.card} ${styles.five}`}>
+          </Link>
+          <Link href="/categories/transport" className={`${styles.card} ${styles.five}`}>
             <h3 className={styles.cardTile}>Transport</h3>
-          </div>
-          <div className={`${styles.card} ${styles.six}`}>
+          </Link>
+          <Link href="/categories/sport" className={`${styles.card} ${styles.six}`}>
             <h3 className={styles.cardTile}>Sport</h3>
-          </div>
+          </Link>
         </div>
       </section>
 

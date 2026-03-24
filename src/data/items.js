@@ -1,215 +1,312 @@
 const items = [
+  // ─── HOMEPAGE (no category) ───
   {
     img: "https://icds.ee/wp-content/uploads/2018/Merkel_beer_Reuters.jpg",
     alt: "Angela Merkel beer",
-    legende: "Angela Merkel en 2018",
+    legende: "Angela Merkel",
     id: 1,
     parllaxSpeed: 0.065
   },
   {
-      img: "https://static.dw.com/image/59302591_702.jpg",
-      alt: "Angela Merkel with animal",
-      legende: "Angela Merkel en 2018",
-      id: 2,
-      parllaxSpeed: 0.05
+    img: "https://static.dw.com/image/59302591_702.jpg",
+    alt: "Angela Merkel with animal",
+    legende: "Angela Merkel",
+    id: 2,
+    parllaxSpeed: 0.05
+  },
+  {
+    img: "https://i.guim.co.uk/img/media/d465c37b95a9d60b9502ebb4874fc1f3fa775be6/246_24_2033_1219/master/2033.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=1060f80718168f29bccd9f9ca900ee0d",
+    alt: "Angela Merkel pointing",
+    legende: "Angela Merkel",
+    id: 4,
+    parllaxSpeed: 0.01
+  },
+  {
+    img: "https://i.redd.it/3pza0s1ezba11.jpg",
+    alt: "Angela Merkel submarine",
+    legende: "Angela Merkel",
+    id: 5,
+    parllaxSpeed: 0.07
+  },
+  {
+    img: "https://media.vanityfair.fr/photos/6151dc113657cac85cbb2c43/16:9/w_2560%2Cc_limit/ABACA_781479_001.jpg",
+    alt: "Angela Merkel feeding birds",
+    legende: "Angela Merkel",
+    id: 6,
+    parllaxSpeed: 0.085
+  },
+  {
+    img: "https://external-preview.redd.it/nOfutxDlJ85YUOQfcw3XrXqKQSuGc1C3tUq9ViJ3gQQ.jpg?auto=webp&s=2944a2ae9844a47d9cc558369ed8fb80d379ac17",
+    alt: "Angela Merkel phone",
+    legende: "Angela Merkel",
+    id: 7,
+    parllaxSpeed: 0.06
+  },
+  {
+    img: "https://media.nature.com/lw767/magazine-assets/d41586-021-02479-6/d41586-021-02479-6_19659954.jpg",
+    alt: "Angela Merkel chemistry",
+    legende: "Angela Merkel",
+    id: 10,
+    parllaxSpeed: 0.065
+  },
 
-    },
+  // ─── ANIMAL ───
+  {
+    img: "https://media.vanityfair.fr/photos/6151dc113657cac85cbb2c43/16:9/w_2560%2Cc_limit/ABACA_781479_001.jpg",
+    alt: "Angela Merkel screaming while parrots land on her",
+    legende: "Surrounded by parrots at a bird park",
+    place: "Marlow Bird Park, September 2021",
+    category: "animal",
+    keyWord: ["parrots", "bird park", "viral"],
+    id: 100,
+  },
+  {
+    img: "https://static.dw.com/image/59302591_1006.jpg",
+    alt: "Angela Merkel with a lemur on her shoulder",
+    legende: "With a lemur on her shoulder",
+    place: "Marlow Bird Park, 2015",
+    category: "animal",
+    keyWord: ["lemur", "close-up"],
+    id: 101,
+  },
+  {
+    img: "https://static.dw.com/image/59302612_1006.jpg",
+    alt: "Angela Merkel with a panda at Berlin Zoo",
+    legende: "With a panda at Berlin Zoo",
+    place: "Berlin Zoo, July 2017",
+    category: "animal",
+    keyWord: ["panda", "diplomacy"],
+    id: 102,
+  },
+  {
+    img: "https://static.dw.com/image/59302673_1006.jpg",
+    alt: "Angela Merkel with Vladimir Putin and his dog",
+    legende: "With Putin's dog during a diplomatic meeting",
+    place: "Sochi, Russia, January 2007",
+    category: "animal",
+    keyWord: ["dog", "putin", "iconic"],
+    id: 103,
+  },
+  {
+    img: "https://static.dw.com/image/59302637_1006.jpg",
+    alt: "Angela Merkel with Holstein cows at a farm",
+    legende: "Visiting a dairy farm",
+    place: "Schleswig-Holstein",
+    category: "animal",
+    keyWord: ["cow", "farm"],
+    id: 104,
+  },
+  {
+    img: "https://www.merkur.de/assets/images/17/96/17096578-1558663593-besuch-zoo-kanzlerin-ihre-tierischen-freunde-2Ve9.jpg",
+    alt: "Angela Merkel feeding a penguin",
+    legende: "Feeding a penguin at the zoo",
+    place: "Marlow Bird Park, April 2015",
+    category: "animal",
+    keyWord: ["penguin", "feeding"],
+    id: 105,
+  },
+  {
+    img: "https://static.dw.com/image/59302545_1006.jpg",
+    alt: "Angela Merkel holding a kiwi bird in New Zealand",
+    legende: "Holding a kiwi bird during a state visit",
+    place: "Motutapu Island, New Zealand, 2014",
+    category: "animal",
+    keyWord: ["kiwi", "new zealand"],
+    id: 106,
+  },
+  {
+    img: "https://static.dw.com/image/59302560_1006.jpg",
+    alt: "Angela Merkel with a koala and Tony Abbott",
+    legende: "Meeting a koala with PM Tony Abbott",
+    place: "Australia, 2014",
+    category: "animal",
+    keyWord: ["koala", "australia"],
+    id: 107,
+  },
+  {
+    img: "https://media.vanityfair.fr/photos/6151df04fc65d5cf6472af4d/master/w_3940%2Cc_limit/ABACA_781445_011.jpg",
+    alt: "Angela Merkel feeding parrots at Marlow Bird Park",
+    legende: "Feeding parrots at a bird park",
+    place: "Marlow Bird Park, September 2021",
+    category: "animal",
+    keyWord: ["parrots", "feeding"],
+    id: 108,
+  },
+  {
+    img: "https://image.kurier.at/images/cfs_616w/3702194/46-148310584.jpg",
+    alt: "Angela Merkel talking about her love of wildlife",
+    legende: "At a reader forum about wildlife",
+    place: "Reader forum, Stralsund, August 2019",
+    category: "animal",
+    keyWord: ["wildlife", "nature"],
+    id: 109,
+  },
 
-    {
-      img: "https://i.guim.co.uk/img/media/d465c37b95a9d60b9502ebb4874fc1f3fa775be6/246_24_2033_1219/master/2033.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=1060f80718168f29bccd9f9ca900ee0d",
-      alt: "Angela Merkel pointing",
-      legende: "Angela Merkel en 2018",
-      id: 4,
-      parllaxSpeed: 0.01
+  // ─── FOOD & BEVERAGE ───
+  {
+    img: "https://i.guim.co.uk/img/media/4b5051828e8ba7733ee41748564f55c8b16a10a1/0_0_2717_1631/master/2717.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=d669d7bc2ceb11eac4035d9b1b4f52e7",
+    alt: "Holding a original grilled Thuringian sausage",
+    legende: "Holding a Thuringian grilled sausage",
+    place: "Campaign tour, Erfurt, September 2009",
+    category: "food",
+    keyWord: ["sausage"],
+    id: 200,
+  },
+  {
+    img: "https://www.telegraph.co.uk/content/dam/news/2016/07/05/89685716_epa05162842_German_Chancellor_Angela_Merkel_smiles_as_she_is_presented_a_Schwarzwaelde_trans_NvBQzQNjv4Bqedg3aqFc7QZ-fcycjJM47UzUm7ZppMwD_IZREn2-zqQ.jpg",
+    alt: "Angela Merkel with cake",
+    legende: "Presented with a Black Forest cherry cake",
+    place: "Campaign event, Radolfzell, February 2016",
+    category: "food",
+    keyWord: ["cake"],
+    id: 201,
+  },
+  {
+    img: "https://external-preview.redd.it/6TmcDWMoJsxHAv8yEHNVJqoH0UhTmFR84jgdzQU5ofk.jpg?auto=webp&s=8126d211dd80cdef8cf862dd4ea219987eee4c6a",
+    alt: "Angela Merkel kebab",
+    legende: "Cutting a d\u00F6ner kebab",
+    category: "food",
+    keyWord: ["kebab"],
+    id: 202,
+  },
+  {
+    img: "https://georgianjournal.ge/media/images/georgianews/2015/May/World/angela-fish.jpg",
+    alt: "Angela Merkel fish",
+    legende: "Eating a salted herring",
+    place: "Christening of trawler 'Mark', Sassnitz, 2015",
+    category: "food",
+    keyWord: ["fish", "herring"],
+    id: 203,
+  },
+  {
+    img: "https://cdn.prod.www.spiegel.de/images/d00cfd22-0001-0004-0000-000000513356_w1200_r2_fpx53.84_fpy50.jpg",
+    alt: "Angela Merkel cutting a huge cake",
+    legende: "Cutting the first slice of a large cake",
+    place: "CDU Economic Council, Berlin, 2013",
+    category: "food",
+    keyWord: ["cake"],
+    id: 204,
+  },
+  {
+    img: "https://www.shutterstock.com/editorial/image-editorial/O8D7I131N5TcA550MjI5OQ==/german-chancellor-angela-merkel-eats-original-thuringia-440nw-8219902a.jpg",
+    alt: "Angela Merkel eating bratwurst",
+    legende: "Eating a bratwurst",
+    place: "Thuringian summer festival, 2009",
+    category: "food",
+    keyWord: ["sausage", "bratwurst"],
+    id: 205,
+  },
+  {
+    img: "https://i.dailymail.co.uk/i/pix/2016/02/29/20/31B5B12800000578-0-image-a-48_1456776997181.jpg",
+    alt: "Angela Merkel drinking a beer",
+    legende: "Drinking a beer",
+    place: "Trudering festival, Munich, 2017",
+    category: "food",
+    keyWord: ["beer", "beverage"],
+    id: 206,
+  },
+  {
+    img: "https://idsb.tmgrup.com.tr/ly/uploads/images/2021/09/24/thumbs/871x871/147284.jpg",
+    alt: "Angela Merkel drinks a dry ice cocktail",
+    legende: "Tasting a dry ice cocktail made by students",
+    place: "Junior University, Wuppertal, May 2019",
+    category: "food",
+    keyWord: ["beverage", "cocktail"],
+    id: 207,
+  },
+  {
+    img: "https://img.buzzfeed.com/buzzfeed-static/static/2017-05/28/15/asset/buzzfeed-prod-fastlane-01/sub-buzz-4746-1496001576-2.jpg?downsize=800:*&output-format=auto&output-quality=auto",
+    alt: "Angela Merkel drinking beer",
+    legende: "Drinking a beer",
+    place: "Trudering festival, Munich, 2017",
+    category: "food",
+    keyWord: ["beer", "beverage"],
+    id: 208,
+  },
+  {
+    img: "https://i.imgur.com/jYpH4Zx.jpg",
+    alt: "Angela Merkel eating a pickled herring",
+    legende: "Eating a pickled herring",
+    place: "Northern Germany fish market tradition",
+    category: "food",
+    keyWord: ["fish", "herring"],
+    id: 209,
+  },
+  {
+    img: "https://static.dw.com/image/19085866_605.jpg",
+    alt: "Angela Merkel toasting with a beer",
+    legende: "Toasting the 500th anniversary of the Beer Purity Law",
+    place: "Ingolstadt, April 2016",
+    category: "food",
+    keyWord: ["beer", "reinheitsgebot", "purity law"],
+    id: 210,
+  },
+  {
+    img: "https://media-cldnry.s-nbcnews.com/image/upload/t_fit-760w,f_auto,q_auto:best/streams/2013/August/130806/6C8536087-130806-germany-sausage-merkel.jpg",
+    alt: "Angela Merkel holding a Thuringian grilled sausage",
+    legende: "Holding a Thuringian grilled sausage",
+    place: "Election campaign tour, Erfurt, 2009",
+    category: "food",
+    keyWord: ["sausage", "thuringia", "campaign"],
+    id: 211,
+  },
+  {
+    img: "https://www.fr.de/assets/images/11/959/11959534-694573449-659846-ie9.jpg",
+    alt: "Angela Merkel eating a Bratwurst",
+    legende: "Eating a Bratwurst",
+    place: "Representation of Thuringia, Berlin, September 2012",
+    category: "food",
+    keyWord: ["bratwurst", "thuringia", "berlin"],
+    id: 212,
+  },
+  {
+    img: "https://www.thetimes.com/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F4229ca46-88da-11e7-a8f3-117a3aea90d9.jpg?crop=1816%2C1816%2C757%2C39",
+    alt: "Angela Merkel drinking beer at a folk festival",
+    legende: "Drinking beer at the Gillamoos folk festival",
+    place: "Gillamoos folk festival, Abensberg, September 2012",
+    category: "food",
+    keyWord: ["beer", "festival", "gillamoos", "bavaria"],
+    id: 213,
+  },
+  {
+    img: "https://i.redd.it/bin-ich-merkw%C3%BCrdig-weil-ich-bilder-von-frau-merkel-und-v0-usnaj99hsmlf1.jpg?width=439&format=pjpg&auto=webp&s=f4d7d56e3c68d731e832f5d435b20c7f778fb974",
+    alt: "Angela Merkel eating, a collector's compilation",
+    legende: "A compilation of Merkel eating",
+    category: "food",
+    keyWord: ["food", "compilation"],
+    id: 214,
+  },
 
-    },
-    {
-      img: "https://i.redd.it/3pza0s1ezba11.jpg",
-      alt: "Angela Merkel submarine",
-      legende: "Angela Merkel en 2018",
-      id: 5,
-      parllaxSpeed: 0.07
+  // ─── SPORT ───
+  {
+    img: "https://idsb.tmgrup.com.tr/ly/uploads/images/2021/09/24/thumbs/871x871/147271.jpg",
+    alt: "Angela Merkel plays with a handball",
+    legende: "Playing with a handball",
+    place: "Receiving the national handball team, Berlin, April 2019",
+    category: "sport",
+    keyWord: ["ball", "handball"],
+    id: 300,
+  },
+  {
+    img: "https://preview.redd.it/20i4blhda1y21.jpg?auto=webp&s=6b9a07e9a3e3c071e2da47d6b8515f8ff23faeff",
+    alt: "Angela Merkel juggling a table tennis ball on a hairdryer",
+    legende: "Balancing a ping-pong ball on a hairdryer",
+    place: "Junior University, Wuppertal, May 2019",
+    category: "sport",
+    keyWord: ["ping-pong"],
+    id: 301,
+  },
 
-    },
-
-    {
-      img: "https://media.vanityfair.fr/photos/6151dc113657cac85cbb2c43/16:9/w_2560%2Cc_limit/ABACA_781479_001.jpg",
-      alt: "Angela Merkel feeding birds",
-      legende: "Angela Merkel en 2018",
-      id: 6,
-      parllaxSpeed: 0.085
-
-    },
-    {
-      img: "https://external-preview.redd.it/nOfutxDlJ85YUOQfcw3XrXqKQSuGc1C3tUq9ViJ3gQQ.jpg?auto=webp&s=2944a2ae9844a47d9cc558369ed8fb80d379ac17",
-      alt: "Angela Merkel phone",
-      legende: "Angela Merkel en 2018",
-      id: 7,
-      parllaxSpeed: 0.06
-
-    },
-
-
-    {
-      img: "https://media.nature.com/lw767/magazine-assets/d41586-021-02479-6/d41586-021-02479-6_19659954.jpg",
-      alt: "Angela Merkel chemistry",
-
-      legende: "Angela Merkel en 2018",
-      id: 10,
-      parllaxSpeed: 0.065
-
-    },
-
-
-
-
-
-    //FOOD
-
-
-    {
-      img: "https://i.guim.co.uk/img/media/4b5051828e8ba7733ee41748564f55c8b16a10a1/0_0_2717_1631/master/2717.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=d669d7bc2ceb11eac4035d9b1b4f52e7",
-      alt: "Holding a original grilled Thuringian sausage",
-      legende: " Holding a Thuringian sausage",
-      place:" 2009 in Erfurt,",
-      category:"food",
-      keyWord:["sandwich","saussage"],
-
-      id: 8,
-      parllaxSpeed: 0.04
-
-    },
-
-    {
-      img: "https://www.telegraph.co.uk/content/dam/news/2016/07/05/89685716_epa05162842_German_Chancellor_Angela_Merkel_smiles_as_she_is_presented_a_Schwarzwaelde_trans_NvBQzQNjv4Bqedg3aqFc7QZ-fcycjJM47UzUm7ZppMwD_IZREn2-zqQ.jpg",
-      alt: "Angela Merkel fish",
-      legende: "Holding a Black Forest cherry cake",
-      place :' During an election campaign for the State Parliament elections in Baden-Württemberg, in Radolfzell, Germany, February 15, 2016.',
-      category:"food",
-      keyWord:["cake"],
-      id: 14,
-
-    },
-
-    {
-      img: "https://external-preview.redd.it/6TmcDWMoJsxHAv8yEHNVJqoH0UhTmFR84jgdzQU5ofk.jpg?auto=webp&s=8126d211dd80cdef8cf862dd4ea219987eee4c6a",
-      alt: "Angela Merkel kebab",
-      legende: "With the kebab knife in her hand",
-      category:"food",
-      keyWord:["kebab"],
-
-      id: 11,
-
-    },
-
-    {
-      img: "https://georgianjournal.ge/media/images/georgianews/2015/May/World/angela-fish.jpg",
-      alt: "Angela Merkel fish",
-      legende: "  eating a salted herring" ,
-      place:" during the christening ceremony of ROS 777 fishing trawler 'Mark' in Sassnitz, Mecklenburg-Western Pomerania,May 26, 2015.",
-      category:"food",
-      id: 12,
-
-    },
-
-
-
-    {
-      img: "https://cdn.prod.www.spiegel.de/images/d00cfd22-0001-0004-0000-000000513356_w960_r1.778_fpx53.84_fpy50.webp",
-      alt: "Angela Merkel fish",
-      legende: "Cuts the first slice of a huge cake ",
-      place :'Economic Conference 2013 of the CDU Economic Council, Berlin',
-      category:"food",
-      keyWord:["cake"],
-      id: 13,
-
-    },
-
-
-
-    {
-      img: "https://www.shutterstock.com/editorial/image-editorial/O8D7I131N5TcA550MjI5OQ==/german-chancellor-angela-merkel-eats-original-thuringia-440nw-8219902a.jpg",
-      alt: "Angela Merkel eating saussage",
-      legende: "Eating bratwurst sausage",
-      place :' Thuringian summer festival,2009',
-      category:"food",
-      keyWord:["sandwich","saussage"],
-      id: 14,
-
-    },
-
-    {
-      img: "https://i.dailymail.co.uk/i/pix/2016/02/29/20/31B5B12800000578-0-image-a-48_1456776997181.jpg",
-      alt: "Angela Merkel eating saussage",
-      legende: "Drinking a beer",
-      place :' during the Trudering festival in Munich, Germany, May 28, 2017.',
-      category:"food",
-      keyWord:["beer","beverage"],
-      id: 15,
-
-    },
-
-    {
-      img: "https://idsb.tmgrup.com.tr/ly/uploads/images/2021/09/24/thumbs/871x871/147284.jpg",
-      alt: " Angela Merkel drinks a dry ice cocktail",
-      legende: " Drinking a dry ice cocktail",
-      place :' designed by young students of the Junior University in Wuppertal, Germany, May 13, 2019.',
-      category:"food",
-      keyWord:["beverage",],
-      id: 16,
-
-    },
-
-    {
-      img: "https://img.buzzfeed.com/buzzfeed-static/static/2017-05/28/15/asset/buzzfeed-prod-fastlane-01/sub-buzz-4746-1496001576-2.jpg?downsize=800:*&output-format=auto&output-quality=auto",
-      alt: "Angela Merkel eating saussage",
-      legende: "Drinking a beer",
-      place :' during the Trudering festival in Munich, Germany, May 28, 2017.',
-      category:"food",
-      keyWord:["beer","beverage"],
-      id: 17,
-
-    },
-
-
-
-    //Sport
-
-{
-  img: "https://idsb.tmgrup.com.tr/ly/uploads/images/2021/09/24/thumbs/871x871/147271.jpg",
-  alt: " plays with a handball",
-  legende: "Playing with handball",
-  place :'  she received the German national handball team, in Berlin, Germany, April 8, 2019.',
-  category:"sport",
-  keyWord:["ball",],
-  id: 16,
-
-},
-
-{
-  img: "https://preview.redd.it/20i4blhda1y21.jpg?auto=webp&s=6b9a07e9a3e3c071e2da47d6b8515f8ff23faeff",
-  alt: "  juggle a table tennis ball on a hairdryer",
-  legende: " juggle a table tennis ball on a hairdryer",
-  place :'  Wuppertal Junior University, Germany. 09th May, 2019',
-  category:"sport",
-  keyWord:["ping-pong",],
-  id: 17,
-
-},
-
-    //Technology
-
-    {
-      img: "https://www.parismatch.com/lmnr/f/webp/r/1716,1144,000000,forcex,center-middle/img/var/pm/public/media/image/2022/03/18/02/Angela-Merkel-en-visite-au-Centre-des-astronautes-europeens-a-Cologne-le-18-mai-2016_7.jpg?VersionId=f65KXz4Py6hP7r2X0KtDT7bedccofc8a",
-      alt: "  juggle a table tennis ball on a hairdryer",
-      legende: " juggle a table tennis ball on a hairdryer",
-      place :'  visiting the European Astronaut Center in Cologne on May 18, 2016. Sascha Schurmann/Pool/Reuter',
-      category:"technology",
-      keyWord:["",],
-      id: 18,
-
-    },
-
-]
+  // ─── TECHNOLOGY ───
+  {
+    img: "https://www.parismatch.com/lmnr/f/webp/r/1716,1144,000000,forcex,center-middle/img/var/pm/public/media/image/2022/03/18/02/Angela-Merkel-en-visite-au-Centre-des-astronautes-europeens-a-Cologne-le-18-mai-2016_7.jpg?VersionId=f65KXz4Py6hP7r2X0KtDT7bedccofc8a",
+    alt: "Angela Merkel at the European Astronaut Center",
+    legende: "At the European Astronaut Centre",
+    place: "Cologne, May 2016",
+    category: "technology",
+    keyWord: ["astronaut", "space"],
+    id: 400,
+  },
+];
 
 export { items };
