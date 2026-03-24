@@ -3,25 +3,28 @@
 import Link from "next/link";
 import styles from "./page.module.css";
 
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+import galerieAnimal from "@/../public/galerieAnimal.png";
+import galerieFood from "@/../public/galerieFood.png";
+import galerieVintage from "@/../public/galerieVintage.png";
+import iconeHome from "@/../public/icone-home.png";
+import randomImg from "@/../public/random.png";
 
 const CARDS = [
-  { slug: "animal", label: "Animal", img: `${basePath}/galerieAnimal.png` },
-  { slug: "food", label: "Food & Beverage", img: `${basePath}/galerieFood.png` },
-  { slug: "vintage", label: "Vintage", img: `${basePath}/galerieVintage.png` },
+  { slug: "animal", label: "Animal", img: galerieAnimal.src },
+  { slug: "food", label: "Food & Beverage", img: galerieFood.src },
+  { slug: "vintage", label: "Vintage", img: galerieVintage.src },
   { slug: "technology", label: "Technology", img: "https://img.welt.de/img/politik/deutschland/mobile162881942/6822501957-ci102l-w1024/Deutschland-Besuch-Barack-Obama-3.jpg" },
   { slug: "transport", label: "Transport", img: "https://static.dw.com/image/17156166_605.jpg" },
   { slug: "sport", label: "Sport", img: "https://media.lesechos.com/api/v1/images/view/5bf181c53e45462cab4a21ae/1280x720/060160208421-web-tete.jpg" },
 ];
 
 export default function Categories() {
-
   return (
     <>
       {/* Top banner */}
       <div className={styles.top}>
         <Link href="/">
-          <img src={`${basePath}/icone-home.png`} alt="Home" className={styles.btnHome} />
+          <img src={iconeHome.src} alt="Home" className={styles.btnHome} />
         </Link>
         <div className={styles.gradient}></div>
         <img
@@ -64,7 +67,7 @@ export default function Categories() {
         <h1 className={styles.title}>Random</h1>
         <div
           className={styles.random}
-          style={{ backgroundImage: `linear-gradient(to top, rgba(0,0,0,0.7) 2%, transparent 70%), url("${basePath}/random.png")` }}
+          style={{ backgroundImage: `linear-gradient(to top, rgba(0,0,0,0.7) 2%, transparent 70%), url("${randomImg.src}")` }}
         >
           <h3 className={styles.cardTile}>Discover the best of all categories</h3>
         </div>
