@@ -144,29 +144,6 @@
   z-index: 1;
 }
 
-.one {
-  background-image: linear-gradient(to top, rgba(0,0,0,0.7) 5%, transparent 60%), url("/galerieAnimal.png");
-}
-
-.two {
-  background-image: linear-gradient(to top, rgba(0,0,0,0.7) 5%, transparent 60%), url("/galerieFood.png");
-}
-
-.three {
-  background-image: linear-gradient(to top, rgba(0,0,0,0.7) 5%, transparent 60%), url("/galerieVintage.png");
-}
-
-.four {
-  background-image: linear-gradient(to top, rgba(0,0,0,0.7) 5%, transparent 60%), url("https://img.welt.de/img/politik/deutschland/mobile162881942/6822501957-ci102l-w1024/Deutschland-Besuch-Barack-Obama-3.jpg");
-}
-
-.five {
-  background-image: linear-gradient(to top, rgba(0,0,0,0.7) 5%, transparent 60%), url("https://static.dw.com/image/17156166_605.jpg");
-}
-
-.six {
-  background-image: linear-gradient(to top, rgba(0,0,0,0.7) 5%, transparent 60%), url("https://media.lesechos.com/api/v1/images/view/5bf181c53e45462cab4a21ae/1280x720/060160208421-web-tete.jpg");
-}
 
 @media (min-width: 540px) {
   .cardContainer {
@@ -232,7 +209,7 @@
   aspect-ratio: 16 / 5;
   max-height: 220px;
   border-radius: 16px;
-  background-image: linear-gradient(to top, rgba(0,0,0,0.7) 2%, transparent 70%), url("/random.png");
+  /* background-image set inline for basePath support */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
